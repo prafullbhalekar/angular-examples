@@ -1,0 +1,9 @@
+<h2>Employee Salary Data</h2>
+<ul class='Employees'>
+  <li *ngFor='let unit of Data' (click)="onSelect(unit)">
+     <span class='badge'>{{unit.Name}}</span>{{unit.Salary}}
+    </li>
+</ul>
+<div *ngIf='selectedunit'>
+  <h2>{{selectedunit.Name}} needs to pay {{incometax}}</h2>
+  </div>
